@@ -1,3 +1,4 @@
+<!-- for Header  -->
 <?php get_header();?>
 
      <!-- *******Welcome Section Start ****** -->
@@ -167,5 +168,6 @@
 
     <!--***** Our courses section start  ******-->
 
+<!-- for footer  -->
 <?php get_footer();?>
        
