@@ -27,53 +27,20 @@
                             <img src="<?php echo esc_url(get_template_directory_uri(). '/images/logo-1.jpg');?>" alt="Main-logo" class="img-fluid" style="width: 80px;">
                         </a>
 
-
-
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-
-
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-ft-size">
-                                <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="category.html">My Projects</a>
-                                </li>
-
-
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about-me.html">About Myself</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="photo-gallery.html">Photo Gallery</a>
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="video-gallery.html">Video Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-
-
-                            </ul>
-
-
+                            <?php
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary-menu',
+                                    'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0 menu-ft-size',
+                                    'container'      => false,
+                                ));
+                            ?>
+        
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </nav>
     <!-- Navbar End  -->
